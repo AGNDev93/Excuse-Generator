@@ -19,11 +19,11 @@ window.onload = function() {
     "while I was praying"
   ];
   // declaring random variables
-  let rdm1 = Math.floor(Math.random() * who.length);
-  let rdm2 = Math.floor(Math.random() * action.length);
-  let rdm3 = Math.floor(Math.random() * what.length);
-  let rdm4 = Math.floor(Math.random() * when.length);
+  let randomWho = Math.floor(Math.random() * who.length);
+  let randomAction = Math.floor(Math.random() * action.length);
+  let randomWhat = Math.floor(Math.random() * what.length);
+  let randomWhen = Math.floor(Math.random() * when.length);
   // creating a sentence (the excuse)
   document.querySelector("#excuse").innerHTML =
-    who[rdm1] + " " + action[rdm2] + " " + what[rdm3] + " " + when[rdm4];
+    who[randomWho] + " " + action[randomAction] + " " + what[randomWhat] + " " + when[randomWhen];
 };
